@@ -98,8 +98,9 @@ object JGitDiff {
   }
 
   private def isGitRepository(workingDir: Path): Boolean =
-    RepositoryCache.FileKey
-      .isGitRepository(workingDir.resolve(DOT_GIT).toFile, FS.DETECTED)
+    true
+//    RepositoryCache.FileKey
+//      .isGitRepository(workingDir.resolve(DOT_GIT).toFile, FS.DETECTED)
 
   private def iterator(
       repository: Repository,
